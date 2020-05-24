@@ -9,8 +9,8 @@ import ChildComponent from './ChildComponent';
 
     console.log('Parent component has rendered')
     return(
-        <View>
-            <TextInput placeholder='type in here' value={state} onChange={(e) => setState(e)} />
+        <View style={{paddingTop:20}}>
+            <TextInput style={{borderWidth:1, height:40, padding:20}} placeholder='type in here' value={state} onChange={(stateVal) => setState(stateVal)} />
             <ChildComponent childRef={childRef} />
         </View>
     );

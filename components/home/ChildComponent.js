@@ -8,8 +8,8 @@ import { TextInput } from 'react-native-gesture-handler'
 
     console.log('child component has rendered')
     return(
-        <View>
-            <TextInput value={state} onChange={e => setState(e)} placeholder='type something' />
+        <View style={{paddingTop:20}}>
+            <TextInput style={{borderWidth:1, height:40, padding:20}} value={state} onChange={stateVal => setState(stateVal)} placeholder='type something' />
         </View>
     )
 }

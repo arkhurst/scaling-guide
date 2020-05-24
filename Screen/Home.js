@@ -31,10 +31,10 @@ export default function Home({navigation}){
     console.log('Home has rendered')
     return(
         <View style={styles.container}>  
-            <Text>Hey there!</Text>
-            <Button  title='Click me to go back' onPress={() => navigation.goBack()} />
-            <View>
-                <TextInput placeholder='type something from home' value={state} onChange={(e) => setState(e)} />
+            <Text>Hey there from Home!</Text>
+            <Button  title='Click me to Onboarding' onPress={() => navigation.navigate('Onboarding')} />
+            <View style={{paddingTop:20}}>
+                <TextInput style={{borderWidth:1, height:40, padding:20}} placeholder='type something from home' value={state} onChange={(stateVal) => setState(stateVal)} />
                 <ParentComponent parentRef={parentState} childRef={childState} />
             </View>
             <Button title="Submit" onPress={handleSubmit} />
